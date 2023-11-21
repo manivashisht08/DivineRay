@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>294070342284-u83i1b37rdao674or22diarc3e4546lh.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAMuy8peXqnzknzBukzujOuSPK1DaVw9VU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>294070342284</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.divineray.app</string>
+	<key>PROJECT_ID</key>
+	<string>divineray-e79c7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>divineray-e79c7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:294070342284:ios:5b1d3857707929f02c61a9</string>
+	<key>DATABASE_URL</key>
+	<string>https://divineray-e79c7.firebaseio.com</string>
+</dict>
+</plist>

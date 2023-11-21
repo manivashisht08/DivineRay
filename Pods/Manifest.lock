@@ -1,0 +1,248 @@
+PODS:
+  - AgoraRtcEngine_iOS (4.2.3):
+    - AgoraRtcEngine_iOS/AIAEC (= 4.2.3)
+    - AgoraRtcEngine_iOS/AINS (= 4.2.3)
+    - AgoraRtcEngine_iOS/AudioBeauty (= 4.2.3)
+    - AgoraRtcEngine_iOS/ClearVision (= 4.2.3)
+    - AgoraRtcEngine_iOS/ContentInspect (= 4.2.3)
+    - AgoraRtcEngine_iOS/DRM (= 4.2.3)
+    - AgoraRtcEngine_iOS/FaceDetection (= 4.2.3)
+    - AgoraRtcEngine_iOS/ReplayKit (= 4.2.3)
+    - AgoraRtcEngine_iOS/RtcBasic (= 4.2.3)
+    - AgoraRtcEngine_iOS/SpatialAudio (= 4.2.3)
+    - AgoraRtcEngine_iOS/VideoCodecDec (= 4.2.3)
+    - AgoraRtcEngine_iOS/VideoCodecEnc (= 4.2.3)
+    - AgoraRtcEngine_iOS/VirtualBackground (= 4.2.3)
+    - AgoraRtcEngine_iOS/VQA (= 4.2.3)
+  - AgoraRtcEngine_iOS/AIAEC (4.2.3)
+  - AgoraRtcEngine_iOS/AINS (4.2.3)
+  - AgoraRtcEngine_iOS/AudioBeauty (4.2.3)
+  - AgoraRtcEngine_iOS/ClearVision (4.2.3)
+  - AgoraRtcEngine_iOS/ContentInspect (4.2.3)
+  - AgoraRtcEngine_iOS/DRM (4.2.3)
+  - AgoraRtcEngine_iOS/FaceDetection (4.2.3)
+  - AgoraRtcEngine_iOS/ReplayKit (4.2.3)
+  - AgoraRtcEngine_iOS/RtcBasic (4.2.3)
+  - AgoraRtcEngine_iOS/SpatialAudio (4.2.3)
+  - AgoraRtcEngine_iOS/VideoCodecDec (4.2.3)
+  - AgoraRtcEngine_iOS/VideoCodecEnc (4.2.3)
+  - AgoraRtcEngine_iOS/VirtualBackground (4.2.3)
+  - AgoraRtcEngine_iOS/VQA (4.2.3)
+  - Alamofire (5.8.1)
+  - BottomPopup (0.7.0)
+  - Branch (1.45.2)
+  - Connectivity (6.1.1)
+  - DateTimePicker (2.5.3)
+  - FBAEMKit (16.2.1):
+    - FBSDKCoreKit_Basics (= 16.2.1)
+  - FBSDKCoreKit (16.2.1):
+    - FBAEMKit (= 16.2.1)
+    - FBSDKCoreKit_Basics (= 16.2.1)
+  - FBSDKCoreKit_Basics (16.2.1)
+  - FBSDKLoginKit (16.2.1):
+    - FBSDKCoreKit (= 16.2.1)
+  - Firebase/Auth (10.17.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 10.17.0)
+  - Firebase/CoreOnly (10.17.0):
+    - FirebaseCore (= 10.17.0)
+  - Firebase/Crashlytics (10.17.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 10.17.0)
+  - FirebaseAppCheckInterop (10.17.0)
+  - FirebaseAuth (10.17.0):
+    - FirebaseAppCheckInterop (~> 10.17)
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GTMSessionFetcher/Core (< 4.0, >= 2.1)
+    - RecaptchaInterop (~> 100.0)
+  - FirebaseCore (10.17.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreExtension (10.17.0):
+    - FirebaseCore (~> 10.0)
+  - FirebaseCoreInternal (10.17.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseCrashlytics (10.17.0):
+    - FirebaseCore (~> 10.5)
+    - FirebaseInstallations (~> 10.0)
+    - FirebaseSessions (~> 10.5)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/Environment (~> 7.8)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (~> 2.1)
+  - FirebaseInstallations (10.17.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseSessions (10.17.0):
+    - FirebaseCore (~> 10.5)
+    - FirebaseCoreExtension (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/Environment (~> 7.10)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesSwift (~> 2.1)
+  - GoogleDataTransport (9.2.5):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.6):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.6):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.6):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.11.6):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.6)"
+  - GoogleUtilities/Reachability (7.11.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.11.6):
+    - GoogleUtilities/Logger
+  - GrowingTextView (0.7.2)
+  - GTMSessionFetcher/Core (3.1.1)
+  - iOSPhotoEditor (1.0.0)
+  - IQKeyboardManagerSwift (6.5.16)
+  - Kingfisher (7.10.0)
+  - Masonry (1.1.0)
+  - nanopb (2.30909.1):
+    - nanopb/decode (= 2.30909.1)
+    - nanopb/encode (= 2.30909.1)
+  - nanopb/decode (2.30909.1)
+  - nanopb/encode (2.30909.1)
+  - NextGrowingTextView (2.1.0)
+  - PromisesObjC (2.3.1)
+  - PromisesSwift (2.3.1):
+    - PromisesObjC (= 2.3.1)
+  - RecaptchaInterop (100.0.0)
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
+  - Socket.IO-Client-Swift (15.1.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SVProgressHUD (2.3.0):
+    - SVProgressHUD/Core (= 2.3.0)
+  - SVProgressHUD/Core (2.3.0)
+  - SwiftAudio (0.11.2)
+  - ToastViewSwift (2.0.0)
+  - YouTubePlayer (0.7.2)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS
+  - Alamofire
+  - BottomPopup
+  - Branch
+  - Connectivity
+  - DateTimePicker
+  - FBSDKLoginKit
+  - Firebase/Auth
+  - Firebase/Crashlytics
+  - FirebaseAuth
+  - GrowingTextView
+  - iOSPhotoEditor
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - Masonry
+  - NextGrowingTextView
+  - SDWebImage
+  - Socket.IO-Client-Swift (~> 15.1.0)
+  - SVProgressHUD
+  - SwiftAudio
+  - ToastViewSwift
+  - YouTubePlayer
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_iOS
+    - Alamofire
+    - BottomPopup
+    - Branch
+    - Connectivity
+    - DateTimePicker
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAppCheckInterop
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreExtension
+    - FirebaseCoreInternal
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - FirebaseSessions
+    - GoogleDataTransport
+    - GoogleUtilities
+    - GrowingTextView
+    - GTMSessionFetcher
+    - iOSPhotoEditor
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Masonry
+    - nanopb
+    - NextGrowingTextView
+    - PromisesObjC
+    - PromisesSwift
+    - RecaptchaInterop
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SVProgressHUD
+    - SwiftAudio
+    - ToastViewSwift
+    - YouTubePlayer
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: eb0a7e87dbc9e818b267d413b48f76a57959e6f4
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  BottomPopup: fe3e284628532f99093ae68c592c6b9d392c972d
+  Branch: c1a7fa1811ef9203c01bc6c2588a229eb3ee1a84
+  Connectivity: 8f70b8506f45632756348d40c6a46ae6f4732652
+  DateTimePicker: 52701ddf656a50856d3510955933f767cd2c947c
+  FBAEMKit: 4763aa27b8f69eb9d2c274189e91388de1dbd88a
+  FBSDKCoreKit: 40ae989ca1da1bbeba56acd4671dde64ad415506
+  FBSDKCoreKit_Basics: 1257d71d2d692661290bf2af4bea5f9a101387af
+  FBSDKLoginKit: bf4f96d0ce475de2da4b1800ce150bd8a6f120f3
+  Firebase: f4ac0b02927af9253ae094d23deecf0890da7374
+  FirebaseAppCheckInterop: 534d033d8d0436b4ab066a8205013d271e18a2b9
+  FirebaseAuth: 8d285d9f6e39cc8e23be53a4edd83a923ea629d8
+  FirebaseCore: 534544dd98cabcf4bf8598d88ec683b02319a528
+  FirebaseCoreExtension: 47720bb330d7041047c0935a34a3a4b92f818074
+  FirebaseCoreInternal: 2cf9202e226e3f78d2bf6d56c472686b935bfb7f
+  FirebaseCrashlytics: d78651ad7db206ef98269e103ac38d69d569200a
+  FirebaseInstallations: 9387bf15abfc69a714f54e54f74a251264fdb79b
+  FirebaseSessions: 49f39e5c10e3f9fdd38d01b748329bae2a2fa8ed
+  GoogleDataTransport: 54dee9d48d14580407f8f5fbf2f496e92437a2f2
+  GoogleUtilities: 202e7a9f5128accd11160fb9c19612de1911aa19
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
+  iOSPhotoEditor: 2951f35246a31dcb428b6292248a9c065582d03e
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  Kingfisher: a18f05d3b6d37d8650ee4a3e61d57a28fc6207f6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
+  NextGrowingTextView: 249ac6c55877ded085460a397477eca0d19ebabc
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  PromisesSwift: 28dca69a9c40779916ac2d6985a0192a5cb4a265
+  RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SVProgressHUD: 1ac802357350fa7998b392b8bb414b4eec94f5f2
+  SwiftAudio: 217f5f184b27a0e25ff0fe7647021f05a21c06c9
+  ToastViewSwift: db710ad3c19c826269d004038c7b69f5b658dc6f
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
+
+PODFILE CHECKSUM: 81841f036a2db267d1681c4a1984833d8125ff10
+
+COCOAPODS: 1.11.3

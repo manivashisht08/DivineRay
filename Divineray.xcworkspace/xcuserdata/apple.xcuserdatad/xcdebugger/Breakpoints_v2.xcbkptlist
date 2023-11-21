@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "06DF30D9-F1C8-4D2F-8EAB-A6253129F2DE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B60335E-714C-4F68-B6D9-1728380293E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Divineray/PlayerControllers/LiveStreamingVC/LiveStreamingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "joinRequestButtonAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6B60335E-714C-4F68-B6D9-1728380293E7 - f7983a32ef375afb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Divineray.LiveStreamingViewController.joinRequestButtonAction(__C.UIButton) -&gt; ()"
+                  moduleName = "Divineray"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Dharmani&apos;sCode/DivineRay/Divineray/PlayerControllers/LiveStreamingVC/LiveStreamingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "6B60335E-714C-4F68-B6D9-1728380293E7 - f7983a32ef375afb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Divineray.LiveStreamingViewController.joinRequestButtonAction(__C.UIButton) -&gt; ()"
+                  moduleName = "Divineray"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Dharmani&apos;sCode/DivineRay/Divineray/PlayerControllers/LiveStreamingVC/LiveStreamingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E313735E-0472-4677-9CF2-B19284303423"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Divineray/PlayerControllers/LiveStreamingVC/LiveStreamingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
+            landmarkName = "viewListButtonAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

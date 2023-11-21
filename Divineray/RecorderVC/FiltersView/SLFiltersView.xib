@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="SLFiltersView" customClass="SLFiltersView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MO-lX-Kvd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Xo-eV-ekk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-t9-HIw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6TZ-OB-xn2"/>
+                    </constraints>
+                    <connections>
+                        <action selector="arrowButtonDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="8nu-Iy-HAD"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAj-jy-Fim">
+                    <rect key="frame" x="0.0" y="35" width="375" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qjs-Dj-Gag">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8MO-lX-Kvd" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="0Cp-Fu-Ngj"/>
+                <constraint firstItem="ywe-t9-HIw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2hy-1U-yvg"/>
+                <constraint firstItem="ywe-t9-HIw" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="6tY-pv-GT0"/>
+                <constraint firstItem="wAj-jy-Fim" firstAttribute="top" secondItem="ywe-t9-HIw" secondAttribute="bottom" id="B1V-xe-sS2"/>
+                <constraint firstItem="ywe-t9-HIw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DaX-m1-0TO"/>
+                <constraint firstItem="ywe-t9-HIw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DsT-83-CS3"/>
+                <constraint firstAttribute="bottom" secondItem="wAj-jy-Fim" secondAttribute="bottom" constant="35" id="Gf1-da-98S"/>
+                <constraint firstItem="8MO-lX-Kvd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HhL-oz-335"/>
+                <constraint firstItem="8MO-lX-Kvd" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="bqg-Sp-xmK"/>
+                <constraint firstItem="8MO-lX-Kvd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oHv-lC-H3m"/>
+                <constraint firstItem="wAj-jy-Fim" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="p83-Sv-jCp"/>
+                <constraint firstAttribute="trailing" secondItem="ywe-t9-HIw" secondAttribute="trailing" id="pqc-ft-X2e"/>
+                <constraint firstItem="ywe-t9-HIw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q1f-Kk-5Dm"/>
+                <constraint firstItem="wAj-jy-Fim" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="q7f-JQ-Lfg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arraowButton" destination="ywe-t9-HIw" id="lpl-1Z-Wtj"/>
+                <outlet property="collectionView" destination="wAj-jy-Fim" id="WWh-kV-4Tf"/>
+            </connections>
+            <point key="canvasLocation" x="-154.40000000000001" y="-752.92353823088456"/>
+        </view>
+    </objects>
+</document>

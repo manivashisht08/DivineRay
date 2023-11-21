@@ -1,0 +1,93 @@
+{
+  "identifier" : "0A05265B",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "E15967FC",
+      "localizations" : [
+        {
+          "description" : "Buy 50 Coins",
+          "displayName" : "Divineray 50",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "divineray50",
+      "referenceName" : "Coin50",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "25.99",
+      "familyShareable" : false,
+      "internalID" : "01732541",
+      "localizations" : [
+        {
+          "description" : "Buy 250 Coins",
+          "displayName" : "Divineray 250",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "divineray250",
+      "referenceName" : "Coin250",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "49.99",
+      "familyShareable" : false,
+      "internalID" : "7D7817E4",
+      "localizations" : [
+        {
+          "description" : "Buy 500 Coins",
+          "displayName" : "Divineray 500",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "divineray500",
+      "referenceName" : "Coin500",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "149.99",
+      "familyShareable" : false,
+      "internalID" : "48DA82DD",
+      "localizations" : [
+        {
+          "description" : "Buy 1500 Coins",
+          "displayName" : "Divineray 1500",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "divineray1500",
+      "referenceName" : "Coin1500",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "349.99",
+      "familyShareable" : false,
+      "internalID" : "70818441",
+      "localizations" : [
+        {
+          "description" : "Buy 3500 Coins",
+          "displayName" : "Divineray 3500",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "divineray3500",
+      "referenceName" : "Coin3500",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

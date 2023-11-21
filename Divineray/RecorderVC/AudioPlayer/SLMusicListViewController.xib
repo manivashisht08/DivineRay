@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLMusicListViewController">
+            <connections>
+                <outlet property="closeButton" destination="9Q1-lK-7MM" id="Pbl-oR-mcx"/>
+                <outlet property="containerView" destination="RYV-t0-r7U" id="9gF-qG-nVv"/>
+                <outlet property="loadingView" destination="XkZ-MZ-VJG" id="zo6-vi-okx"/>
+                <outlet property="tableView" destination="9nH-Dn-cbB" id="DZj-HZ-QSl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYV-t0-r7U">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="704"/>
+                    <subviews>
+                        <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Q1-lK-7MM">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="UHl-2b-dSh"/>
+                                <constraint firstAttribute="height" constant="50" id="d1r-Hi-HWk"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-5"/>
+                            <state key="normal" image="close_black.png"/>
+                            <connections>
+                                <action selector="cancelButtonDidClicked:" destination="-1" eventType="touchUpInside" id="Y7B-Dm-Hsb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Sound Clip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h8-kY-pWZ">
+                            <rect key="frame" x="84" y="0.0" width="207" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="207" id="Ydf-hY-QfL"/>
+                                <constraint firstAttribute="height" constant="50" id="kqE-VX-llL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9nH-Dn-cbB">
+                            <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Kal-tV-ZcF"/>
+                            </connections>
+                        </tableView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XkZ-MZ-VJG">
+                            <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            <color key="color" red="0.12941176469999999" green="0.2666666667" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7h8-kY-pWZ" firstAttribute="top" secondItem="RYV-t0-r7U" secondAttribute="top" id="2kn-dl-EAz"/>
+                        <constraint firstItem="XkZ-MZ-VJG" firstAttribute="centerX" secondItem="RYV-t0-r7U" secondAttribute="centerX" id="3Q7-N9-gdO"/>
+                        <constraint firstItem="9Q1-lK-7MM" firstAttribute="top" secondItem="RYV-t0-r7U" secondAttribute="top" id="3zT-N6-ly4"/>
+                        <constraint firstAttribute="trailing" secondItem="9nH-Dn-cbB" secondAttribute="trailing" id="941-Cb-N1D"/>
+                        <constraint firstItem="9nH-Dn-cbB" firstAttribute="top" secondItem="9Q1-lK-7MM" secondAttribute="bottom" id="Boe-Jb-LxZ"/>
+                        <constraint firstItem="7h8-kY-pWZ" firstAttribute="centerX" secondItem="RYV-t0-r7U" secondAttribute="centerX" id="FnH-U8-ISz"/>
+                        <constraint firstItem="9Q1-lK-7MM" firstAttribute="leading" secondItem="RYV-t0-r7U" secondAttribute="leading" id="Ggv-wb-HJo"/>
+                        <constraint firstItem="XkZ-MZ-VJG" firstAttribute="centerY" secondItem="RYV-t0-r7U" secondAttribute="centerY" constant="-18.5" id="IbP-6l-DLF"/>
+                        <constraint firstAttribute="bottom" secondItem="9nH-Dn-cbB" secondAttribute="bottom" constant="37" id="W06-hf-EeA"/>
+                        <constraint firstItem="9nH-Dn-cbB" firstAttribute="leading" secondItem="RYV-t0-r7U" secondAttribute="leading" id="xPq-uJ-xMI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="RYV-t0-r7U" secondAttribute="bottom" constant="-37" id="AbP-Jj-Xqm"/>
+                <constraint firstItem="RYV-t0-r7U" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="K7a-nF-fbc"/>
+                <constraint firstAttribute="trailing" secondItem="RYV-t0-r7U" secondAttribute="trailing" id="QWa-c2-2JS"/>
+                <constraint firstItem="RYV-t0-r7U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TPK-1k-zgm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="115.59220389805098"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_black.png" width="24" height="24"/>
+    </resources>
+</document>

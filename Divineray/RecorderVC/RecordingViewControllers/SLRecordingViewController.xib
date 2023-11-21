@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLRecordingViewController">
+            <connections>
+                <outlet property="topShadow" destination="KOP-ZS-vQF" id="K22-e8-GFU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOP-ZS-vQF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="354"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KOP-ZS-vQF" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="AWW-Um-9xU"/>
+                <constraint firstItem="KOP-ZS-vQF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pRN-Bn-KI1"/>
+                <constraint firstItem="KOP-ZS-vQF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="viQ-id-Kxk"/>
+                <constraint firstAttribute="bottom" secondItem="KOP-ZS-vQF" secondAttribute="bottom" constant="313" id="yIT-Aq-BDM"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="109"/>
+        </view>
+    </objects>
+</document>

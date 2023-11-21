@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="StreamUsersTableCell" rowHeight="72" id="KGk-i7-Jjw" customClass="StreamUsersTableCell" customModule="Divineray" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cT4-8h-JQX">
+                        <rect key="frame" x="24" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="8TW-cc-H7C"/>
+                            <constraint firstAttribute="height" constant="40" id="xRB-cv-Sti"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPd-3P-zyQ">
+                        <rect key="frame" x="80" y="26" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GaI-uW-JKc">
+                        <rect key="frame" x="187" y="19" width="140" height="34"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS7-Eq-qEV">
+                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="5O7-GY-NVm"/>
+                                    <constraint firstAttribute="height" constant="34" id="Rdk-Jd-IxX"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="tick"/>
+                                <connections>
+                                    <action selector="acceptAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hZr-2l-4Fy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCY-gl-IG2">
+                                <rect key="frame" x="44" y="0.0" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="N6r-U1-wfb"/>
+                                    <constraint firstAttribute="width" constant="34" id="qpD-oV-ypI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="closE-1"/>
+                                <connections>
+                                    <action selector="rejectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vza-Q2-cVR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWl-qF-bbF">
+                                <rect key="frame" x="88" y="0.0" width="52" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="enP-xw-MVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
+                                <state key="normal" title="Kick">
+                                    <color key="titleColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kickUserAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="z8k-8U-9Qk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JPd-3P-zyQ" firstAttribute="leading" secondItem="cT4-8h-JQX" secondAttribute="trailing" constant="16" id="8es-Lk-IXM"/>
+                    <constraint firstItem="cT4-8h-JQX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="CBJ-Kw-KyR"/>
+                    <constraint firstAttribute="trailing" secondItem="GaI-uW-JKc" secondAttribute="trailing" constant="24" id="Eab-l0-RWA"/>
+                    <constraint firstItem="GaI-uW-JKc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JPd-3P-zyQ" secondAttribute="trailing" constant="16" id="MNy-s0-q8A"/>
+                    <constraint firstItem="JPd-3P-zyQ" firstAttribute="centerY" secondItem="cT4-8h-JQX" secondAttribute="centerY" id="WaT-yj-f8d"/>
+                    <constraint firstItem="JPd-3P-zyQ" firstAttribute="centerY" secondItem="GaI-uW-JKc" secondAttribute="centerY" id="kig-ym-Fkw"/>
+                    <constraint firstAttribute="bottom" secondItem="cT4-8h-JQX" secondAttribute="bottom" constant="16" id="lqM-mo-xE4"/>
+                    <constraint firstItem="cT4-8h-JQX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="qpY-yd-GIU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="acceptButton" destination="cS7-Eq-qEV" id="d6I-Ff-h9m"/>
+                <outlet property="kickUserButton" destination="nWl-qF-bbF" id="g0S-3e-Rjr"/>
+                <outlet property="nameLabel" destination="JPd-3P-zyQ" id="3kV-XL-q8z"/>
+                <outlet property="rejectButton" destination="XCY-gl-IG2" id="ghh-92-HBJ"/>
+                <outlet property="userImage" destination="cT4-8h-JQX" id="zUO-Sb-ccM"/>
+            </connections>
+            <point key="canvasLocation" x="160.1449275362319" y="105.80357142857143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="closE-1" width="68" height="68"/>
+        <image name="tick" width="68" height="68"/>
+    </resources>
+</document>
