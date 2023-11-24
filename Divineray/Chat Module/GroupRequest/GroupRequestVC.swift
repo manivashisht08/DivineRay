@@ -9,11 +9,12 @@
 import UIKit
 protocol GroupRequestDelegate{
    
-    func updateGroupData()
+    func updateGroupData(name:String)
 }
 class GroupRequestVC: UIViewController {
     @IBOutlet weak var bgView: UIView!
     var delegate : GroupRequestDelegate?
+    var name = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         tapdismiss()
@@ -30,7 +31,7 @@ class GroupRequestVC: UIViewController {
     
     @IBAction func btnGroupRequest(_ sender: UIButton) {
         self.dismiss(animated: true){
-            self.delegate?.updateGroupData()
+            self.delegate?.updateGroupData(name: self.name)
         }
     }
     

@@ -1,1 +1,1 @@
-# DivineRay
+# Divineray

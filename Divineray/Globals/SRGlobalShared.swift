@@ -135,14 +135,24 @@ struct API {
     static var getAddReportAbuseURL: String {
         return environmentBaseURL + "AddReportAbuse.php"
     }
+    static var joinGroupRequestURL: String {
+        return environmentBaseURL + "joinGroupRequest.php"
+    }
+    
+    static var GroupRequestListingURL: String {
+        return environmentBaseURL + "GroupRequestListing.php"
+    }
+    static var acceptRejectGroupRequestURL: String {
+        return environmentBaseURL + "acceptRejectGroupRequest.php"
+    }
     static var blockUserURL: String {
         return environmentBaseURL + "blockUser.php"
     }
     static var getChatListURL: String {
-        return environmentBaseURL + "GetAllChatLists.php"
+        return environmentBaseURL + "GetAllChatListsV2.php"
     }
     static var getChatMessageDetailURL: String {
-        return environmentBaseURL + "GetAllChatMessages.php"
+        return environmentBaseURL + "GetAllChatMessagesV2.php"
     }
     static var addChatMessageDetailURL: String {
         return environmentBaseURL + "AddUpdateMessage.php"

@@ -72,8 +72,10 @@
 		31B835492B0486D40007A9F8 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B835482B0486D30007A9F8 /* SignUpModel.swift */; };
 		31B8354B2B0486E30007A9F8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8354A2B0486E20007A9F8 /* Constant.swift */; };
 		31B8354D2B04888E0007A9F8 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8354C2B04888E0007A9F8 /* AppDefaults.swift */; };
+		31BBCB6A2B1091C600119669 /* GroupRequestListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BBCB692B1091C600119669 /* GroupRequestListModel.swift */; };
 		31C3297B2B049DE200FFC3B1 /* AddPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3297A2B049DE200FFC3B1 /* AddPostModel.swift */; };
 		31C3297D2B04A93200FFC3B1 /* GroupListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3297C2B04A93200FFC3B1 /* GroupListModel.swift */; };
+		31D551C22B0F66EA00D26AC8 /* GroupRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D551C12B0F66EA00D26AC8 /* GroupRequestModel.swift */; };
 		31DA15ED2AFCC71000D56216 /* UIView + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA15EC2AFCC71000D56216 /* UIView + Custom.swift */; };
 		31DA15EF2AFCC7E300D56216 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA15EE2AFCC7E300D56216 /* UIFont+Custom.swift */; };
 		31DA15F12AFCC8FA00D56216 /* UILabel+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA15F02AFCC8FA00D56216 /* UILabel+Custom.swift */; };
@@ -670,8 +672,10 @@
 		31B835482B0486D30007A9F8 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		31B8354A2B0486E20007A9F8 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		31B8354C2B04888E0007A9F8 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		31BBCB692B1091C600119669 /* GroupRequestListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRequestListModel.swift; sourceTree = "<group>"; };
 		31C3297A2B049DE200FFC3B1 /* AddPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostModel.swift; sourceTree = "<group>"; };
 		31C3297C2B04A93200FFC3B1 /* GroupListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListModel.swift; sourceTree = "<group>"; };
+		31D551C12B0F66EA00D26AC8 /* GroupRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRequestModel.swift; sourceTree = "<group>"; };
 		31DA15EC2AFCC71000D56216 /* UIView + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Custom.swift"; sourceTree = "<group>"; };
 		31DA15EE2AFCC7E300D56216 /* UIFont+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		31DA15F02AFCC8FA00D56216 /* UILabel+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Custom.swift"; sourceTree = "<group>"; };
@@ -1631,6 +1635,8 @@
 				31B80B592B061EF20024C439 /* CreateGroupModel.swift */,
 				31B80B5B2B063FDF0024C439 /* ReportModel.swift */,
 				31B514052B074F4D008201EB /* FavouriteModel.swift */,
+				31D551C12B0F66EA00D26AC8 /* GroupRequestModel.swift */,
+				31BBCB692B1091C600119669 /* GroupRequestListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3555,6 +3561,7 @@
 				A3A4F3CA249BECE500B1E823 /* GPUImagePolkaDotFilter.m in Sources */,
 				A3A4F3C2249BECE500B1E823 /* GPUImageKuwaharaFilter.m in Sources */,
 				A3E73F9624936402003B0AD6 /* UIStoryboard+Storyboards.swift in Sources */,
+				31BBCB6A2B1091C600119669 /* GroupRequestListModel.swift in Sources */,
 				A3A4F34E249BECE500B1E823 /* GPUImageHueFilter.m in Sources */,
 				A3A4F3CF249BECE500B1E823 /* GPUImageColourFASTFeatureDetector.m in Sources */,
 				A3F9FE6024BA425800CE37CD /* SLDiscoverTableViewCell.m in Sources */,
@@ -3777,6 +3784,7 @@
 				A3A4F35F249BECE500B1E823 /* GPUImageHardLightBlendFilter.m in Sources */,
 				A363470524AF9AEE00A3D2FC /* ProfileHeaderOtherViewController.swift in Sources */,
 				A3E73FA824936402003B0AD6 /* SRDataManager.swift in Sources */,
+				31D551C22B0F66EA00D26AC8 /* GroupRequestModel.swift in Sources */,
 				A376FF4B249E52F0007DCBDE /* UPloadViewController.m in Sources */,
 				A3A4F35A249BECE500B1E823 /* GPUImageColorMatrixFilter.m in Sources */,
 				A3CD6928267622370090E611 /* ForceUpdateViewController.swift in Sources */,

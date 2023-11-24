@@ -111,7 +111,6 @@ class GroupVC: UIViewController,UITextFieldDelegate {
         self.groupTableView.reloadData()
         btnCancel.isHidden = false
         btnSearch.isHidden = true
-        
         self.newGroupBgView.isHidden = true
         self.searchBarBgView.isHidden = false
         self.newGroupBgViewHeightCons.constant = 55
@@ -162,15 +161,58 @@ extension GroupVC : UITableViewDelegate, UITableViewDataSource {
             cell.lblName.text = self.groupJoinListArray[indexPath.row].groupName ?? ""
             cell.userImage.sd_setImage(with: URL(string: self.groupJoinListArray[indexPath.row].groupImage ?? ""), placeholderImage: UIImage(named: "user"))
             cell.showOnlineImg.isHidden = true
-            
+            cell.btnJoin.tag = indexPath.row
+            if self.groupJoinListArray[indexPath.row].isJoined ?? 0 == 0 {
+                cell.btnJoin.setTitle("Join", for: .normal)
+                cell.btnJoin.isUserInteractionEnabled = true
+                cell.btnJoin.backgroundColor = .red
+            }else if self.groupJoinListArray[indexPath.row].isJoined ?? 0 == 1{
+                cell.btnJoin.setTitle("Joined", for: .normal)
+                cell.btnJoin.isUserInteractionEnabled = false
+                cell.btnJoin.backgroundColor = .gray
+            }else if self.groupJoinListArray[indexPath.row].isJoined ?? 0 == 2 {
+                cell.btnJoin.setTitle("Requested", for: .normal)
+                cell.btnJoin.isUserInteractionEnabled = false
+                cell.btnJoin.backgroundColor = .gray
+            }
+            cell.btnJoin.addTarget(self, action: #selector(joinRequestAct(sender:)), for: .touchUpInside)
             return cell
+        }
+    }
+    @objc func joinRequestAct(sender:UIButton){
+        var userModel = SignupModel()
+        userModel.user_id = ApplicationStates.getUserID()
+        userModel.roomId = self.groupJoinListArray[sender.tag].roomID ?? ""
+        SVProgressHUD.show()
+        UserApiModel().joinGrpRequest(model: userModel) { response, error in
+        SVProgressHUD.dismiss()
+            if let jsonResponse = response{
+                if let parsedData = try? JSONSerialization.data(withJSONObject: jsonResponse,options: .prettyPrinted){
+                    let userDict  = try? JSONDecoder().decode(ApiResponseModel<GroupRequestModel>.self, from: parsedData)
+                    if userDict?.status == 1 {
+                        self.showAlertWith(title: API.appName, message: userDict?.message ?? "")
+                        self.getAllGroupListApi()
+                    }else if userDict?.status == 0{
+                        self.showAlertWith(title: API.appName, message: userDict?.message ?? "")
+                    }
+                }
+            }
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 65
+        return 75
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.groupJoinListArray[indexPath.row].isJoined ?? 0 == 1{
+            let storyBoard = UIStoryboard(name: "Chat", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "ChatDetailVC") as! ChatDetailVC
+            vc.profileImg = self.groupJoinListArray[indexPath.row].groupImage ?? ""
+            vc.receiverName = self.groupJoinListArray[indexPath.row].groupName ?? ""
+            vc.roomId = self.groupJoinListArray[indexPath.row].roomID ?? ""
+            vc.isGroup = self.groupJoinListArray[indexPath.row].isGroup ?? ""
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
 //        if indexPath.row == 0 || indexPath.row == 1{
 //            let storyBoard = UIStoryboard(name: "Chat", bundle: nil)
 //            let vc = storyBoard.instantiateViewController(withIdentifier: "ChatDetailVC") as! ChatDetailVC

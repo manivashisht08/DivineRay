@@ -101,7 +101,7 @@ extension CreateGroupVC : UICollectionViewDelegate,UICollectionViewDataSource,UI
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CreateGroupCVCell", for: indexPath) as! CreateGroupCVCell
         cell.nameLbl.text = self.selectedArr[indexPath.row].name
         cell.btnCross.tag = indexPath.row
-        cell.mainImg.sd_setImage(with: URL(string: self.selectedArr[indexPath.row].photo ?? ""), placeholderImage: UIImage(named: ""))
+        cell.mainImg.sd_setImage(with: URL(string: self.selectedArr[indexPath.row].photo ?? ""), placeholderImage: UIImage(named: "user"))
 
         cell.btnCross.addTarget(self, action: #selector(crossAct(sender:)), for: .touchUpInside)
         return cell

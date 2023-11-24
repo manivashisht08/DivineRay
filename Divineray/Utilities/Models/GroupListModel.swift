@@ -16,10 +16,11 @@ struct GroupListModel: Codable {
 // MARK: - Datum
 struct GroupListData: Codable {
     var id, userID, chatUserID, roomID: String?
-    var groupName, isGroup, groupCreatedBy, requestStatus: String?
-    var groupImage,isJoined: String?
-    var roomCreated,username, isDisable, userCount: String?
+    var groupName,isGroup,groupCreatedBy,requestStatus: String?
+    var groupImage: String?
+    var roomCreated,username,isDisable,userCount: String?
     var isSelected :Bool?
+    var isJoined:Int?
     
     mutating func updateSelected(isSelected:Bool){
         self.isSelected = isSelected

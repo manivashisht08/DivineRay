@@ -116,9 +116,41 @@ class UserApiModel {
         })
     }
     
+
+    
     func allReportReason(model:SignupModel,completion: @escaping (NSDictionary?,String?) -> Void){
 
         AFWrapperClass.sharedInstance.requestPOSTSURL(API.allReportReason, params: (model.convertDict() as! [String:Any]), headers: ["Token":ApplicationStates.getTokenID()], success: { (response) in
+            print(response)
+            completion(response,nil)
+        }, failure: { (error) in
+            print(error.debugDescription)
+            completion(nil, error.debugDescription)
+        })
+    }
+    func joinGrpRequest(model:SignupModel,completion: @escaping (NSDictionary?,String?) -> Void){
+
+        AFWrapperClass.sharedInstance.requestPostWithMultiFormData(API.joinGroupRequestURL, params: (model.convertDict() as! [String:Any]), headers: ["Token":ApplicationStates.getTokenID()], success: { (response) in
+            print(response)
+            completion(response,nil)
+        }, failure: { (error) in
+            print(error.debugDescription)
+            completion(nil, error.debugDescription)
+        })
+    }
+    func groupRequestListing(model:SignupModel,completion: @escaping (NSDictionary?,String?) -> Void){
+
+        AFWrapperClass.sharedInstance.requestPostWithMultiFormData(API.GroupRequestListingURL, params: (model.convertDict() as! [String:Any]), headers: ["Token":ApplicationStates.getTokenID()], success: { (response) in
+            print(response)
+            completion(response,nil)
+        }, failure: { (error) in
+            print(error.debugDescription)
+            completion(nil, error.debugDescription)
+        })
+    }
+    func acceptRejectGroupRequest(model:SignupModel,completion: @escaping (NSDictionary?,String?) -> Void){
+
+        AFWrapperClass.sharedInstance.requestPostWithMultiFormData(API.acceptRejectGroupRequestURL, params: (model.convertDict() as! [String:Any]), headers: ["Token":ApplicationStates.getTokenID()], success: { (response) in
             print(response)
             completion(response,nil)
         }, failure: { (error) in

@@ -132,6 +132,7 @@ class ChatDetailVC: UIViewController, UITextViewDelegate, updateBlockDel, GroupR
         if isGroup == "1" {
             let vc = UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: "GroupRequestVC") as! GroupRequestVC
             vc.delegate = self
+            vc.name = receiverName
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)
         }else{
@@ -492,8 +493,9 @@ extension ChatDetailVC: KeyboardVMObserver {
         })
     }
     
-    func updateGroupData() {
+    func updateGroupData(name:String) {
         let vc = UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: "GroupAcceptRequestVC") as! GroupAcceptRequestVC
+        vc.name = name
         self.navigationController?.pushViewController(vc, animated: true)
     }
     func updateBlock(otherId:String) {

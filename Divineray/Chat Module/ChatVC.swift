@@ -232,7 +232,7 @@ extension ChatVC:UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? ChatListTBCell
         let respDict = responseArr[indexPath.row] as? [String:AnyObject] ?? [:]
-        let badgeCount = respDict["unReadCount"]
+        let badgeCount = respDict["UnreadMessagesCount"]
         var bdgCountStr: String? = nil
         if let badgeCount = badgeCount {
             bdgCountStr = "\(badgeCount)"
@@ -260,8 +260,12 @@ extension ChatVC:UITableViewDataSource{
         }else{
             cell?.messageLbl.isHidden = false
             cell?.messageLbl.text = respDict["lastMessage"] as? String ?? ""
-            cell?.nameLbl.text = respDict["username"] as? String ?? ""
-            var userProfilePic = respDict["userProfileImage"] as? String ?? ""
+            if respDict["isGroup"] as? String ?? "" == "1" {
+                cell?.nameLbl.text = respDict["groupName"] as? String ?? ""
+            }else{
+                cell?.nameLbl.text = respDict["groupName"] as? String ?? ""
+            }
+            var userProfilePic = respDict["groupImage"] as? String ?? ""
             userProfilePic = userProfilePic.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? ""
             cell?.profileImgView.sd_setImage(with: URL(string: userProfilePic ), placeholderImage: UIImage(named: "user"))
         }
@@ -299,7 +303,7 @@ extension ChatVC:UITableViewDelegate{
             CMDVC?.receiverName = "\(object)"
         }
         else{
-            CMDVC?.receiverName = contactDict["username"] as? String ?? ""
+            CMDVC?.receiverName = contactDict["groupName"] as? String ?? ""
         }
         
         if roomId == ""{

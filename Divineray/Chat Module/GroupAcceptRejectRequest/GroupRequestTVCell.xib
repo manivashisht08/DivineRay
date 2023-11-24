@@ -71,6 +71,9 @@
                                                 <real key="value" value="7"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnAccept:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qdg-jd-Kb3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhA-Ew-cny">
                                         <rect key="frame" x="70" y="0.0" width="60" height="30"/>
@@ -85,6 +88,9 @@
                                                 <real key="value" value="7"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnReject:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p3G-fh-HjM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

@@ -92,10 +92,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-Oe-YTo">
-                                <rect key="frame" x="280" y="20" width="60" height="30"/>
+                                <rect key="frame" x="260" y="20" width="80" height="30"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="FgU-ky-5QC"/>
+                                    <constraint firstAttribute="width" constant="80" id="FgU-ky-5QC"/>
                                     <constraint firstAttribute="height" constant="30" id="cyA-wX-3ai"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>

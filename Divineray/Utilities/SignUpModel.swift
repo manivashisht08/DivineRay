@@ -87,13 +87,17 @@ struct SignupModel :Decodable{
     var groupImage:Data?
     var reportreasons:String?
     var blockTo:String?
+    var roomId:String?
+    var groupCreatedBy:String?
         
     private enum CodingKeys : String, CodingKey {
-        case firstName = "firstName", lastName = "lastName",email,password,latitude,longitude,deviceToken = "deviceToken",deviceType = "deviceType",type,userID,lat,log,hobbiesID,otherUserID,reportedBy,reportedId,reasonId,oldPassword,confirmPassword,newPassword,perPage,pageNo,search,senderID,planName,planPrice,planDuration,expireDate,roomID,message,receiverID,gender,dob,city,hobbies,ethnicity,profileImage,age,location,description,purchaseType,planID,postID,address,videoDescription,postVideo,thumbImage,isFromSearch,videoDuration,id,otherReason,reportType,cardToken,cardNumber,cvv,expiryMonth,expiryYear,userName,amount,cardId,token,isUpdate,postUserID,user_id,title,tags,postHeight,postWidth,musicId,postImage,isGroupPost,groupIds,followType,lastUserId,profileUserId,groupName,ids,groupImage,reportreasons,blockTo
+        case firstName = "firstName", lastName = "lastName",email,password,latitude,longitude,deviceToken = "deviceToken",deviceType = "deviceType",type,userID,lat,log,hobbiesID,otherUserID,reportedBy,reportedId,reasonId,oldPassword,confirmPassword,newPassword,perPage,pageNo,search,senderID,planName,planPrice,planDuration,expireDate,roomID,message,receiverID,gender,dob,city,hobbies,ethnicity,profileImage,age,location,description,purchaseType,planID,postID,address,videoDescription,postVideo,thumbImage,isFromSearch,videoDuration,id,otherReason,reportType,cardToken,cardNumber,cvv,expiryMonth,expiryYear,userName,amount,cardId,token,isUpdate,postUserID,user_id,title,tags,postHeight,postWidth,musicId,postImage,isGroupPost,groupIds,followType,lastUserId,profileUserId,groupName,ids,groupImage,reportreasons,blockTo,roomId,groupCreatedBy
     }
     func convertDict()-> NSMutableDictionary{
         let dict = NSMutableDictionary()
+        dict.setValue(self.groupCreatedBy, forKey: "groupCreatedBy")
         dict.setValue(self.ids, forKey: "ids")
+        dict.setValue(self.roomId, forKey: "roomId")
         dict.setValue(self.blockTo, forKey: "blockTo")
         dict.setValue(self.groupImage, forKey: "groupImage")
         dict.setValue(self.reportreasons, forKey: "reportreasons")
